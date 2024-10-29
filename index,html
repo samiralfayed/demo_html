@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .schedule-form {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .day-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="schedule-form">
+        <h2>Weekly Schedule</h2>
+        <form action="#" method="post">
+            <!-- Days of the Week -->
+            <div class="day-row">
+                <label>Monday</label>
+                <input type="time" name="monday_start" required>
+                <input type="time" name="monday_end" required>
+            </div>
+
+            <div class="day-row">
+                <label>Tuesday</label>
+                <input type="time" name="tuesday_start" required>
+                <input type="time" name="tuesday_end" required>
+            </div>
+
+            <div class="day-row">
+                <label>Wednesday</label>
+                <input type="time" name="wednesday_start" required>
+                <input type="time" name="wednesday_end" required>
+            </div>
+
+            <div class="day-row">
+                <label>Thursday</label>
+                <input type="time" name="thursday_start" required>
+                <input type="time" name="thursday_end" required>
+            </div>
+
+            <div class="day-row">
+                <label>Friday</label>
+                <input type="time" name="friday_start" required>
+                <input type="time" name="friday_end" required>
+            </div>
+
+            <div class="day-row">
+                <label>Saturday</label>
+                <input type="time" name="saturday_start">
+                <input type="time" name="saturday_end">
+            </div>
+
+            <div class="day-row">
+                <label>Sunday</label>
+                <input type="time" name="sunday_start">
+                <input type="time" name="sunday_end">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
